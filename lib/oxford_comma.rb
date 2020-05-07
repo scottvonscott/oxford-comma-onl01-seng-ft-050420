@@ -6,8 +6,8 @@ def oxford_comma(array)
   else array.length > 2
     new_array1 = []
     new_array2 = []
-    new_array1 << array[0..array.size-2]
-    new_array2 << array.size[-1]
+    new_array1 << array[0..array.size-1]
+    new_array2 << array.last
     new_array1.join(", ") + new_array2.join(", and ")
   end
 end
